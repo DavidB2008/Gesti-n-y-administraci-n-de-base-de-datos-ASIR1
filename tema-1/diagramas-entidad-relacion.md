@@ -1,2 +1,0 @@
-# Diagramas Entidad-Relación
-

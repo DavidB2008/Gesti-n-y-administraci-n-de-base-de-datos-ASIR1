@@ -9,5 +9,7 @@
     * [¿Cómo creamos entonces un Diagrama Entidad-Relación para una DB?](tema-1/diagramas-entidad-relacion/como-creamos-entonces-un-diagrama-entidad-relacion-para-una-db.md)
     * [Cardinalidades del Diagrama](tema-1/diagramas-entidad-relacion/cardinalidades-del-diagrama.md)
   * [Web-Libro con teoría sobre el modelo de diagramas Entidad-Relación](tema-1/web-libro-con-teoria-sobre-el-modelo-de-diagramas-entidad-relacion.md)
+  * [Mis primeros diagramas E-R](tema-1/mis-primeros-diagramas-e-r/README.md)
+    * [Mis primeros diagramas E R David Blanco (1).docxs](tema-1/mis-primeros-diagramas-e-r/mis-primeros-diagramas-e-r-david-blanco-1-.docxs.md)
 * [Tema 2: SQL](tema-2-sql/README.md)
   * [Page 1](tema-2-sql/page-1.md)

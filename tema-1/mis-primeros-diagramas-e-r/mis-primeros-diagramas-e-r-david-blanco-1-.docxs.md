@@ -16,6 +16,8 @@ Los productos son suministrados por diferentes proveedores. Se debe tener en cue
 
 De cada proveedor se desea conocer el **NIF**, nombre y dirección”.
 
+<img src="../../.gitbook/assets/unknown (4).png" alt="" height="335" width="602">
+
 ## EJERCICIO 2
 
 “Se desea informatizar la gestión de una empresa de transportes que reparte paquetes por toda España. Los encargados de llevar los paquetes son los camioneros, de los que se quiere guardar el **dni**, nombre, teléfono, dirección, salario y población en la que vive.
@@ -26,6 +28,8 @@ De las provincias a las que llegan los paquetes interesa guardar el **código de
 
 De los camiones que llevan los camioneros, interesa conocer la **matrícula**, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros”.
 
+<img src="../../.gitbook/assets/unknown (3).png" alt="" height="303" width="678">
+
 ## EJERCICIO 3
 
 “Se desea diseñar la base de datos de un Instituto. En la base de datos se desea guardar los datos de los profesores del Instituto (**DNI**, nombre, dirección y teléfono).
@@ -33,6 +37,8 @@ De los camiones que llevan los camioneros, interesa conocer la **matrícula**, m
 Los profesores imparten módulos, y cada módulo tiene un **código** y un nombre. Cada alumno está matriculado en uno o varios módulos. De cada alumno se desea guardar el **nº de expediente**, nombre, apellidos y fecha de nacimiento.
 
 Los profesores pueden impartir varios módulos, pero un módulo sólo puede ser impartido por un profesor. Cada curso tiene un grupo de alumnos, uno de los cuales es el **delegado** del grupo”.
+
+<img src="../../.gitbook/assets/unknown (2).png" alt="" height="403" width="560">
 
 ## EJERCICIO 4
 
@@ -54,6 +60,8 @@ De cada revisión se desea saber si se ha hecho cambio de filtro, si se ha hecho
 
 Los coches pueden pasar varias revisiones en el concesionario”.
 
+<img src="../../.gitbook/assets/unknown (1).png" alt="" height="400" width="559">
+
 ## EJERCICIO 5
 
 A partir del siguiente supuesto diseñar el modelo entidad-relación:
@@ -69,3 +77,5 @@ Cada ingreso que realiza el paciente queda registrado en la base de datos. De ca
 Un médico puede atender varios ingresos, pero el ingreso de un paciente solo puede ser atendido por un único médico. Un paciente puede realizar varios ingresos en el hospital”.
 
 Rojo : Entidades Verde: Atributos Amarillo: Relación **Negrita**: Clave primaria
+
+<img src="../../.gitbook/assets/unknown.png" alt="" height="404" width="419">

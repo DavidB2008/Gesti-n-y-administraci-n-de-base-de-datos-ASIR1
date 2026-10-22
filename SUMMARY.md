@@ -25,4 +25,7 @@
   * [Modelo Relacional Act.8](tema-1/modelo-relacional-act.8.md)
   * [Act 9 - Modelo Relacional "Agencia de viajes"](tema-1/act-9-modelo-relacional-agencia-de-viajes.md)
 * [Tema 2: SQL](tema-2-sql/README.md)
-  * [Page 1](tema-2-sql/page-1.md)
+  * [DDL](tema-2-sql/ddl/README.md)
+    * [Master of Table's](tema-2-sql/ddl/master-of-tables.md)
+    * [Manual de creación de Tablas en Mysql (scripting)](tema-2-sql/ddl/manual-de-creacion-de-tablas-en-mysql-scripting.md)
+    * [Declaración de las tablas: Las Formas Normales](tema-2-sql/ddl/declaracion-de-las-tablas-las-formas-normales.md)

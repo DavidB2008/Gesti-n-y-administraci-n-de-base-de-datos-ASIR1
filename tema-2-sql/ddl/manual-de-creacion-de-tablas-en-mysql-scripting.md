@@ -78,3 +78,69 @@ CREATE TABLE productos (
     CONSTRAINT chk_precio_valido CHECK (precio > 0)
 ) ENGINE=InnoDB;
 ```
+
+### 5 Establecer Claves Primarias y Foráneas (Relaciones)
+
+Representa las cardinalidades del diagrama mediante llaves primarias y secundarias:
+
+#### Relaciones 1 : N (Uno a Muchos)
+
+La clave primaria de la tabla "Uno" (Padre) se coloca como clave foránea (`FOREIGN KEY`) en la tabla "Muchos" (Hija).
+
+#### Relaciones N : M (Muchos a Muchos)
+
+Crea una tabla intermedia que contenga las claves primarias de ambas tablas como llaves foráneas (formando una `PRIMARY KEY` compuesta).
+
+#### Comportamiento en Cascadas
+
+Define qué sucede al eliminar o actualizar un registro padre mediante `ON DELETE` y `ON UPDATE`:\
+• `CASCADE`: Elimina/actualiza automáticamente los registros hijos.\
+• `SET NULL`: Deja el campo en nulo en los hijos.\
+• `RESTRICT / NO ACTION`: Bloquea la eliminación si existen datos vinculados.
+
+```
+-- Tabla Intermedia para Relación N:M entre Pedidos y Productos
+CREATE TABLE detalles_pedido (
+    pedido_id INT UNSIGNED NOT NULL,
+    producto_id INT UNSIGNED NOT NULL,
+    cantidad SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+    precio_unitario DECIMAL(10,2) NOT NULL,
+
+    PRIMARY KEY (pedido_id, producto_id),
+    
+    CONSTRAINT fk_detalle_pedido 
+        FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+        
+    CONSTRAINT fk_detalle_producto 
+        FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
+        ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB;
+```
+
+### 6 Optimizar mediante Índices y Documentación
+
+Añade índices adicionales (`INDEX`, `FULLTEXT`) en campos frecuentemente filtrados en consultas y utiliza `COMMENT` para documentar columnas complejas directamente en la estructura.
+
+```
+CREATE TABLE clientes (
+    cliente_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    apellido VARCHAR(100) NOT NULL,
+    biografia TEXT,
+    
+    INDEX idx_busqueda_apellido (apellido),
+    FULLTEXT ft_biografia (biografia)
+) ENGINE=InnoDB COMMENT='Tabla principal de gestión de clientes';
+```
+
+### 7 Verificación y Prueba de Ejecución
+
+Valida que el script completo se ejecute en el orden correcto sin inconsistencias de referencias cruzadas.
+
+#### Estructura Final Recomendada del Script
+
+1. Creación y selección de la base de datos (`CREATE DATABASE`, `USE`).
+2. Creación de tablas independientes/padre (sin FKs).
+3. Creación de tablas dependientes/hijas (con FKs).
+4. Creación de tablas de unión/intermedias (N:M).

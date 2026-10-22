@@ -22,5 +22,7 @@
       * [Transformación de Relaciones Ternarias (Grado 3)](tema-1/mis-primeros-diagramas-e-r/teoria-modelo-relacional/transformacion-de-relaciones-ternarias-grado-3.md)
       * [Transformación de los Atributos de Relaciones —> Ejemplo Universidad](tema-1/mis-primeros-diagramas-e-r/teoria-modelo-relacional/transformacion-de-los-atributos-de-relaciones-greater-than-ejemplo-universidad.md)
   * [Ejercicio 8](tema-1/ejercicio-8.md)
+  * [Modelo Relacional Act.8](tema-1/modelo-relacional-act.8.md)
+  * [Act 9 - Modelo Relacional "Agencia de viajes"](tema-1/act-9-modelo-relacional-agencia-de-viajes.md)
 * [Tema 2: SQL](tema-2-sql/README.md)
   * [Page 1](tema-2-sql/page-1.md)
